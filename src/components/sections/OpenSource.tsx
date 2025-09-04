@@ -92,7 +92,7 @@ export default function OpenSource() {
             }}
           >
             <Typography color="success" fontWeight="xl">
-              Dustin is
+              Davyd is
             </Typography>
             {mobile ? <br /> : " "}
             {/* Join the{" "} */}

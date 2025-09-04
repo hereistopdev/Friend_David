@@ -2,7 +2,7 @@ import { Button, Card, IconButton, Stack, Tooltip, Typography } from "@mui/joy";
 import details from "@/assets/Details";
 import { useMobileMode } from "@/components/Responsive";
 import useOverlayQueryParam from "@/navigation/useOverlayQueryParam";
-import pdf from "@/assets/pdf/my-resume.pdf";
+import pdf from "@/assets/pdf/davyd.pdf";
 import { LuDownload,  LuFileText, LuGlasses } from "react-icons/lu";
 
 /**

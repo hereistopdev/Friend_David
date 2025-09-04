@@ -158,7 +158,7 @@ export default function Header() {
           textAlign: mobile ? "center" : "left",
         }}
       >
-        Here&apos;s{" "}
+        I am {" "}
         <ATypography
           textColor="primary.plainColor"
           href={details.contact.linkedin}
@@ -172,8 +172,8 @@ export default function Header() {
         . I&apos;m a{" "}
         <Typography textColor="text.primary">Multilingual Software Engineer</Typography>
         &nbsp;
-        and the <Typography textColor="text.primary">JS/TS/React/Angular/.NET</Typography>{" "}
-        Lover.
+        and have <Typography textColor="text.primary">10+ years experiences</Typography>{" "}
+        in software development.
       </Typography>
     </Stack>
   );

@@ -105,7 +105,7 @@ export default function Resume() {
                 textColor="text.secondary"
                 marginBottom={0.5}
               >
-                Software Engineer
+                Senior Software Engineer
               </Typography>
               <Typography
                 component="div"

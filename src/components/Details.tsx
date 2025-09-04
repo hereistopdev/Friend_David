@@ -11,6 +11,7 @@ import { IoSchoolOutline } from "react-icons/io5";
 import { SlWrench } from "react-icons/sl";
 import { TbCircleDashed } from "react-icons/tb";
 import { Category } from "@/components/sections/Terminal";
+import { marked } from "marked";
 
 export const skillIcons: {
   [key: string]: React.ReactNode;
@@ -181,9 +182,8 @@ export function Experience({ truncate = false }: { truncate?: boolean }) {
                   );
                   const years = momentDuration.years();
                   const months = momentDuration.months() + 1;
-                  const duration = `${
-                    years > 0 ? `${years} year${years !== 1 ? "s" : ""} ` : ""
-                  }${months} month${months !== 1 ? "s" : ""}`;
+                  const duration = `${years > 0 ? `${years} year${years !== 1 ? "s" : ""} ` : ""
+                    }${months} month${months !== 1 ? "s" : ""}`;
                   return (
                     <Stack
                       key={`${item.company}-${item.position}-${item.start}-${item.end}`}
@@ -307,9 +307,13 @@ export function Experience({ truncate = false }: { truncate?: boolean }) {
                             : null}
                           {typeof item.description === "object" ? (
                             <Stack>
-                              {item.description.map((chunk) => (
-                                <Typography key={chunk}>- {chunk}</Typography>
-                              ))}
+                              {item.description.map((chunk, index) => {
+                                const parsedBiographyContent = "- " + (marked.parse(chunk) as string).replace(/<p>/g, "").replace(/<\/p>/g, "")
+                                if (index == 0) return <Typography> <b> {chunk} </b></Typography>;
+                                else return (
+                                  <div key={chunk} dangerouslySetInnerHTML={{ __html: parsedBiographyContent }} />
+                                )
+                              })}
                             </Stack>
                           ) : null}
                         </Typography>

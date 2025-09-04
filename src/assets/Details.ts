@@ -147,12 +147,12 @@ const details = {
   languages: [
     {
       name: "English",
-      level: "A2",
+      level: "C1",
     },
     {
       name: "Mandarin",
-      level: "A1",
-      native: "A1"
+      level: "C2",
+      native: "C2"
     },
   ],
   contact: {

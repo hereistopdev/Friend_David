@@ -157,7 +157,7 @@ const details = {
   ],
   contact: {
     location: "Ankara, Turkey",
-    email: "davyd.yang.dev@gmail.com",
+    email: "davydyang3@gmail.com",
     phone: "+90 212 3207438",
     website: "https://davyd.live/",
     linkedin: "https://www.linkedin.com/in/davyd-yang-5b3b02136/",

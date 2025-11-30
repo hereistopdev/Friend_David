@@ -9,8 +9,8 @@ import {
   IconButton,
 } from "@mui/joy";
 import { useState } from "react";
-import { TbWallet, TbCopy, TbCheck } from "react-icons/tb";
-import { SiEthereum, SiBinance, SiTron } from "react-icons/si";
+import { TbWallet, TbCopy, TbCheck, TbCoins } from "react-icons/tb";
+import { SiEthereum, SiBinance } from "react-icons/si";
 import details from "@/assets/Details";
 import Meta from "@/components/Meta";
 import { useMobileMode } from "@/components/Responsive";
@@ -31,19 +31,19 @@ export default function Payment() {
       name: "ERC20",
       icon: <SiEthereum />,
       address: details.payment.erc20,
-      color: "primary",
+      color: "primary" as const,
     },
     {
       name: "BEP20",
       icon: <SiBinance />,
       address: details.payment.bep20,
-      color: "warning",
+      color: "warning" as const,
     },
     {
       name: "TRC20",
-      icon: <SiTron />,
+      icon: <TbCoins />,
       address: details.payment.trc20,
-      color: "success",
+      color: "success" as const,
     },
   ].filter((method) => method.address); // Only show methods with addresses
 
@@ -52,8 +52,8 @@ export default function Payment() {
       await navigator.clipboard.writeText(text);
       setCopiedIndex(index);
       setTimeout(() => setCopiedIndex(null), 2000);
-    } catch (err) {
-      console.error("Failed to copy:", err);
+    } catch {
+      // Silently fail if clipboard access is denied
     }
   };
 
@@ -152,7 +152,7 @@ export default function Payment() {
                             >
                               {method.icon}
                             </Avatar>
-                            <Typography level="title-lg" fontWeight="lg">
+                            <Typography level="h5" fontWeight="lg">
                               {method.name}
                             </Typography>
                           </Stack>

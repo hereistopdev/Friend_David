@@ -167,9 +167,9 @@ const details = {
     deviantart: "https://davyd.live/",
   },
   payment: {
-    bitcoin: "",
-    payoneer: "",
-    paypal: "",
+    erc20: "0x286314ad1b45c0699b78b49bb2aa83da0f65a3b3",
+    bep20: "0x286314ad1b45c0699b78b49bb2aa83da0f65a3b3",
+    trc20: "TSBwJhEsRMyKgBWQfEdEk4xRRU2zjfAEFM",
   },
 };
 

@@ -10,8 +10,7 @@ import {
 } from "@mui/joy";
 import { useState } from "react";
 import { TbWallet, TbCopy, TbCheck } from "react-icons/tb";
-import { FaBitcoin, FaPaypal } from "react-icons/fa";
-import { SiPayoneer } from "react-icons/si";
+import { SiEthereum, SiBinance, SiTron } from "react-icons/si";
 import details from "@/assets/Details";
 import Meta from "@/components/Meta";
 import { useMobileMode } from "@/components/Responsive";
@@ -29,21 +28,21 @@ export default function Payment() {
 
   const paymentMethods: PaymentMethod[] = [
     {
-      name: "Bitcoin",
-      icon: <FaBitcoin />,
-      address: details.payment.bitcoin,
-      color: "warning",
-    },
-    {
-      name: "Payoneer",
-      icon: <SiPayoneer />,
-      address: details.payment.payoneer,
+      name: "ERC20",
+      icon: <SiEthereum />,
+      address: details.payment.erc20,
       color: "primary",
     },
     {
-      name: "PayPal",
-      icon: <FaPaypal />,
-      address: details.payment.paypal,
+      name: "BEP20",
+      icon: <SiBinance />,
+      address: details.payment.bep20,
+      color: "warning",
+    },
+    {
+      name: "TRC20",
+      icon: <SiTron />,
+      address: details.payment.trc20,
       color: "success",
     },
   ].filter((method) => method.address); // Only show methods with addresses

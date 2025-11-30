@@ -42,6 +42,13 @@ export const architecture: RouteObject[] = [
         },
         path: "projects",
       },
+      {
+        async lazy() {
+          const { default: Payment } = await import("@/pages/Payment");
+          return { Component: Payment };
+        },
+        path: "payment",
+      },
     ],
   },
   {

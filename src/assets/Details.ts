@@ -166,6 +166,11 @@ const details = {
     gitlab: "https://www.gitlab.com/hereistopdev",
     deviantart: "https://davyd.live/",
   },
+  payment: {
+    bitcoin: "",
+    payoneer: "",
+    paypal: "",
+  },
 };
 
 export default details;

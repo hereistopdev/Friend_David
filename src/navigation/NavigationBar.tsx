@@ -18,6 +18,8 @@ import {
   BsFilePerson,
   BsFilePersonFill,
   BsSun,
+  BsWallet,
+  BsWalletFill,
 } from "react-icons/bs";
 import { MdOutlineAutoMode } from "react-icons/md";
 import useOverlayQueryParam from "@/navigation/useOverlayQueryParam";
@@ -266,6 +268,14 @@ export default function NavigationBar({
             layout={horizontal ? "horizontal" : "vertical"}
             to="/resume"
             selected={location.pathname === "/resume"}
+          />
+          <NavigationBarItem
+            icon={<BsWallet />}
+            selectedIcon={<BsWalletFill />}
+            text="Payment"
+            layout={horizontal ? "horizontal" : "vertical"}
+            to="/payment"
+            selected={location.pathname === "/payment"}
           />
         </Stack>
         {horizontal ? (

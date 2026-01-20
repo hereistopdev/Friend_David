@@ -1,5 +1,4 @@
-import bogazici from "@/assets/icons/bogazici.png"
-import itu from "@/assets/icons/itu.png"
+import WUT from "@/assets/icons/WUT.jpg"
 import medx from "@/assets/icons/md2x.png"
 import stride from "@/assets/icons/stride.png"
 import coderunner from "@/assets/icons/coderunner.png"
@@ -14,22 +13,22 @@ const details = {
   biography: "Accomplished **Full Stack Developer** with extensive experience in both **frontend** and **backend** technologies, including **React, Next.js,Vue.js, Laravel, Django, Java, .Net, Golang, Ruby, React Native and Flutters**. Known for delivering high-quality web and **mobile applications** that prioritize performance, scalability,and user experience. Dedicated to embracing new challenges and staying ahead of industry trends through continuous learning and innovation",
   education: [
     {
-      school: "Boğaziçi University",
-      url: "https://bogazici.edu.tr/",
-      icon: bogazici,
-      iconMin: bogazici,
-      location: "Istanbul, Turkey",
+      school: "Warsaw University of Technology",
+      url: "https://eng.pw.edu.pl/",
+      icon: WUT,
+      iconMin: WUT,
+      location: "Warsaw, Poland",
       degree: "Master's Degree",
       major: "Computer Science",
       start: "June 2012",
       end: "June 2014",
     },
     {
-      school: "Istanbul Technical University",
-      url: "https://www.itu.edu.tr/en",
-      icon: itu,
-      iconMin: itu,
-      location: "Istanbul, Turkey",
+      school: "Warsaw University of Technology",
+      url: "https://eng.pw.edu.pl/",
+      icon: WUT,
+      iconMin: WUT,
+      location: "Warsaw, Poland",
       degree: "Bachelor's Degree",
       major: "Computer Engineering",
       start: "Aug 2007",
@@ -129,7 +128,7 @@ const details = {
       contract: "Full-time",
       position: "Web Developer",
       start: "Aug 2014",
-      end: "Mar 2013",
+      end: "Mar 2016",
       description: [
         "During my tenure at Dreamix, a reputed custom software development agency established in 2005, I played a pivotal role in the creation of a cutting-edge social media platform designed to cater to niche communities. With a dedicated team of 40 professionals, Dreamix specializes in developing tailored software, web, and mobile applications for small to midmarket businesses, leveraging technologies such as JavaScript, Kotlin, Swift, Python, HTML, CSS, and jQuery.",
         "I was actively involved in the initial planning phases, where we collaborated with stakeholders to define the project scope and objectives. This included conducting detailed requirement analysis sessions to ensure the platform met the specific needs of our target users and aligned with the client's business goals.",
@@ -150,17 +149,17 @@ const details = {
       level: "C1",
     },
     {
-      name: "Mandarin",
+      name: "Polish",
       level: "C2",
       native: "C2"
     },
   ],
   contact: {
-    location: "Ankara, Turkey",
-    email: "davydyang3@gmail.com",
-    phone: "+90 212 3207438",
+    location: "Warsaw, Poland",
+    email: "davydyang49@gmail.com",
+    phone: "+48 883242270",
     website: "https://davyd.live/",
-    linkedin: "https://www.linkedin.com/in/davyd-yang-5b3b02136/",
+    linkedin: "https://www.linkedin.com/in/davyd-yang-99a58a3a7/",
     github: "https://www.github.com/hereistopdev",
     researchgate: "davyd-yang",
     gitlab: "https://www.gitlab.com/hereistopdev",

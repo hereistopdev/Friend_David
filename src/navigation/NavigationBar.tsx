@@ -269,14 +269,14 @@ export default function NavigationBar({
             to="/resume"
             selected={location.pathname === "/resume"}
           />
-          <NavigationBarItem
+          {/* <NavigationBarItem
             icon={<BsWallet />}
             selectedIcon={<BsWalletFill />}
             text="Payment"
             layout={horizontal ? "horizontal" : "vertical"}
             to="/payment"
             selected={location.pathname === "/payment"}
-          />
+          /> */}
         </Stack>
         {horizontal ? (
           <Button

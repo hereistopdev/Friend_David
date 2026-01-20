@@ -18,8 +18,8 @@ import {
   BsFilePerson,
   BsFilePersonFill,
   BsSun,
-  BsWallet,
-  BsWalletFill,
+  // BsWallet,
+  // BsWalletFill,
 } from "react-icons/bs";
 import { MdOutlineAutoMode } from "react-icons/md";
 import useOverlayQueryParam from "@/navigation/useOverlayQueryParam";
